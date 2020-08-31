@@ -1,21 +1,11 @@
-//A Partir de esta linea se ejecuta el script para el boton que aparece para subir
-window.onscroll = function () {
-  if (document.documentElement.scrollTop > 700) {
-    document.querySelector(".containerGoTop").classList.add("showGoTop");
-    sobreMi.classList.add("state");
-    contacto.classList.remove("state");
-
-  } else {
-    document.querySelector(".containerGoTop").classList.remove("showGoTop");
-    inicio.classList.add("state");
-    sobreMi.classList.remove("state");
-    contacto.classList.remove("state");
-  }
-}
-
 //Este script es para la topbar.
 let burger = document.querySelector(".burger");
 let topbar = document.querySelector(".links");
+let inicio = document.getElementById("homeI");
+let sobreMi = document.getElementById("aboutI");
+let contact = document.getElementById("contactI");
+let menu = document.getElementById("menuI");
+let kit = document.getElementById("kitI");
 
 burger.addEventListener("click", () => {
   topbar.classList.toggle("sidebar");
@@ -23,6 +13,101 @@ burger.addEventListener("click", () => {
   burger.classList.toggle("toggle");
 });
 
+inicio.addEventListener("click", () => {
+  inicio.classList.add("tupperNav");
+  sobreMi.classList.remove("tupperNav");
+  contact.classList.remove("tupperNav");
+  menu.classList.remove("tupperNav");
+  kit.classList.remove("tupperNav");
+});
+
+sobreMi.addEventListener("click", () => {
+  sobreMi.classList.add("tupperNav");
+  inicio.classList.remove("tupperNav");
+  contact.classList.remove("tupperNav");
+  menu.classList.remove("tupperNav");
+  kit.classList.remove("tupperNav");
+});
+
+contact.addEventListener("click", () => {
+  contact.classList.add("tupperNav");
+  inicio.classList.remove("tupperNav");
+  sobreMi.classList.remove("tupperNav");
+  menu.classList.remove("tupperNav");
+  kit.classList.remove("tupperNav");
+});
+
+menu.addEventListener("click", () => {
+  menu.classList.add("tupperNav");
+  inicio.classList.remove("tupperNav");
+  sobreMi.classList.remove("tupperNav");
+  contact.classList.remove("tupperNav");
+  kit.classList.remove("tupperNav");
+});
+
+kit.addEventListener("click", () => {
+  kit.classList.add("tupperNav");
+  inicio.classList.remove("tupperNav");
+  sobreMi.classList.remove("tupperNav");
+  contact.classList.remove("tupperNav");
+  menu.classList.remove("tupperNav");
+});
+
+//A Partir de esta linea se ejecuta el script para el boton que aparece para subir
+window.onscroll = function () {
+  if (document.documentElement.scrollTop > 400) {
+    document.querySelector(".containerGoTop").classList.add("showGoTop");
+    document.querySelector(".subir").classList.remove("ocultarContenido");
+    document.querySelector(".up").classList.remove("ocultarContenido");
+  } else {
+    document.querySelector(".containerGoTop").classList.remove("showGoTop");
+    document.querySelector(".subir").classList.add("ocultarContenido");
+    document.querySelector(".up").classList.add("ocultarContenido");
+  }
+}
+
+//Animacion de las secciones y la navbar
+let home = document.getElementById("home");
+window.addEventListener("scroll", () => {
+  let currentHeight = window.scrollY; //parte superior de la pantalla
+  let homePositionY = home.scrollHeight =+ 200;
+  if (currentHeight >= homePositionY) {
+    inicio.classList.add("tupperNav");
+    sobreMi.classList.remove("tupperNav");
+    contact.classList.remove("tupperNav");
+    menu.classList.remove("tupperNav");
+    kit.classList.remove("tupperNav");
+  }
+});
+
+
+let about = document.getElementById("about");
+window.addEventListener("scroll", () => {
+  let currentHeight2 = window.scrollY; //parte superior de la pantalla
+  let aboutPositionY = about.scrollHeight =+ 500;
+
+  if (currentHeight2 >= aboutPositionY) {
+    sobreMi.classList.add("tupperNav");
+    inicio.classList.remove("tupperNav");
+    contact.classList.remove("tupperNav");
+    menu.classList.remove("tupperNav");
+    kit.classList.remove("tupperNav");
+  }
+});
+
+let footer = document.getElementById("contact");
+window.addEventListener("scroll", () => {
+  let currentHeight3 = window.scrollY; //parte superior de la pantalla
+  let contactPositionY = about.scrollHeight =+ 1200;
+
+  if (currentHeight3 >= contactPositionY) {
+    contact.classList.add("tupperNav");
+    inicio.classList.remove("tupperNav");
+    sobreMi.classList.remove("tupperNav");
+    menu.classList.remove("tupperNav");
+    kit.classList.remove("tupperNav");
+  }
+});
 
 //SCRIPT PARA EL SLIDER SHOW
 let slider = document.querySelector(".slideShow");
