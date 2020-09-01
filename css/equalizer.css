@@ -19,7 +19,6 @@ a,
 button,
 select,
 textarea {
-  color: #333;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
@@ -67,7 +66,6 @@ input::-webkit-inner-spin-button {
 }
 
 button {
-  background: transparent;
   cursor: pointer;
 }
 
@@ -80,7 +78,6 @@ a {
   text-decoration: none;
 }
 a:focus, a:active {
-  color: #333;
   text-decoration: none;
 }
 

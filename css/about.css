@@ -3,8 +3,8 @@
   width: 100%;
   margin: auto;
   overflow: hidden;
-  height: 1000px;
-  background: green;
+  height: 650px;
+  background-color: rgba(194, 46, 46, 0.671);
   display: flex;
   align-items: center;
   justify-content: center;
