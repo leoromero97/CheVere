@@ -121,7 +121,7 @@ window.addEventListener("resize", function () {
 
 setInterval(function () {
   slides();
-}, 8000);
+}, 6000);
 
 function slides() {
   slider.style.transform = "translate(" + (-width * contador) + "px)"; //hace un barrido total del width actual

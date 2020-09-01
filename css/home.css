@@ -25,6 +25,7 @@
 }
 
 .slide {
+  border: 2px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -34,36 +35,44 @@
   text-align: center;
   justify-content: space-evenly;
   padding: 20px 0;
-  background: #ffffff;
-  background-attachment: fixed;
+  background: #3da5a0;
+}
+
+.slide:nth-child(1) {
+  background: linear-gradient(to bottom, #2c2c2cd7, hsla(0, 0%, 100%, 0.274)), url(../img/plato1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.slide:nth-child(1) {
-  background: linear-gradient(to bottom, #2c2c2ccb, hsla(0, 0%, 100%, 0.274)), url(../img/plato1.jpg);
-}
-
 .slide:nth-child(2) {
-  background: linear-gradient(to bottom, #2c2c2ccb, hsla(0, 0%, 100%, 0.096)), url(../img/plato2.png);
+  background: linear-gradient(to bottom, #2c2c2cd7, hsla(0, 0%, 100%, 0.096)), url(../img/plato2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .slide:nth-child(3) {
-  background: linear-gradient(to bottom, #2c2c2ccb, hsla(0, 0%, 100%, 0.096)), url(../img/plato3.jpg);
+  background: linear-gradient(to bottom, #2c2c2cd7, hsla(0, 0%, 100%, 0.096)), url(../img/plato3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.slide:nth-child(1) {
-  background: linear-gradient(to bottom, #2c2c2ccb, hsla(0, 0%, 100%, 0.096)), url(../img/plato1.jpg);
+.slide:nth-child(4) {
+  background: linear-gradient(to bottom, #2c2c2ce7, hsla(0, 0%, 100%, 0.096)), url(../img/plato1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .slide h2 {
   font-size: 20px;
   margin-bottom: 16px;
   font-weight: bolder;
+  color: white;
 }
 
 .slide p {
   font-size: 16px;
+  color: white;
 }
 
 .buttonOrder,
@@ -118,19 +127,17 @@
   .buttonOrder,
   .buttonMenu {
     padding: 14px;
-    width: 120px;
+    width: 90px;
     font-size: 20px;
   }
 
   .buttonOrder:hover {
-    width: 160px;
     color: white;
     background-color: black;
     border: 2px solid white;
   }
 
   .buttonMenu:hover {
-    width: 160px;
     color: black;
     background-color: white;
     border: 2px solid black;
