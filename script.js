@@ -98,7 +98,7 @@ window.addEventListener("scroll", () => {
 let footer = document.getElementById("contact");
 window.addEventListener("scroll", () => {
   let currentHeight3 = window.scrollY; //parte superior de la pantalla
-  let contactPositionY = about.scrollHeight =+ 1200;
+  let contactPositionY = about.scrollHeight =+ 1400;
 
   if (currentHeight3 >= contactPositionY) {
     contact.classList.add("tupperNav");

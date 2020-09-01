@@ -41,19 +41,19 @@
 }
 
 .slide:nth-child(1) {
-  background: linear-gradient(to bottom, #3131315e, hsla(0, 0%, 100%, 0.096)), url(../img/plato1.jpg);
+  background: linear-gradient(to bottom, #2c2c2ccb, hsla(0, 0%, 100%, 0.274)), url(../img/plato1.jpg);
 }
 
 .slide:nth-child(2) {
-  background: linear-gradient(to bottom, #3131315e, hsla(0, 0%, 100%, 0.096)), url(../img/plato2.png);
+  background: linear-gradient(to bottom, #2c2c2ccb, hsla(0, 0%, 100%, 0.096)), url(../img/plato2.png);
 }
 
 .slide:nth-child(3) {
-  background: linear-gradient(to bottom, #3131315e, hsla(0, 0%, 100%, 0.096)), url(../img/plato3.jpg);
+  background: linear-gradient(to bottom, #2c2c2ccb, hsla(0, 0%, 100%, 0.096)), url(../img/plato3.jpg);
 }
 
 .slide:nth-child(1) {
-  background: linear-gradient(to bottom, #3131315e, hsla(0, 0%, 100%, 0.096)), url(../img/plato1.jpg);
+  background: linear-gradient(to bottom, #2c2c2ccb, hsla(0, 0%, 100%, 0.096)), url(../img/plato1.jpg);
 }
 
 .slide h2 {
@@ -71,6 +71,7 @@
   padding: 6px;
   width: 80px;
   font-size: 16px;
+  text-align: center;
 }
 
 .buttonOrder {
@@ -107,11 +108,11 @@
   }
 
   .slide h2 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .slide p {
-    font-size: 20px;
+    font-size: 26px;
   }
 
   .buttonOrder,
