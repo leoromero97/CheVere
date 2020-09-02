@@ -4,7 +4,7 @@
   width: 100%;
   margin: auto;
   overflow: hidden;
-  background-color: #3da5a0;
+  background: linear-gradient(to bottom, hsl(50, 100%, 71%), hsla(50, 100%, 71%, 0.473)), url(../img/architect.svg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,8 +98,7 @@
 
   .contentenidoFooter {
     height: 80%;
-    width: 34%;
-    flex-shrink: 0;
+    width: 36%;
   }
 
   .external {
@@ -114,10 +113,14 @@
 
   .external p {
     font-size: 15px;
-    margin-left: 10px;
     display: flex;
     align-items: center;
-  }
+    transform: translateX(12px);
+    -webkit-transform: translateX(12px);
+    -moz-transform: translateX(12px);
+    -ms-transform: translateX(12px);
+    -o-transform: translateX(12px);
+}
 
   .external img {
     height: 26px;
@@ -141,6 +144,7 @@
 
   .external p {
     font-size: 18px;
+    line-height: 30px;
   }
 
   .external img {
