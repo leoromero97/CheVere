@@ -1,6 +1,6 @@
 #about {
   padding: 20px 0;
-  height: 1000px;
+  height: 1100px;
   width: 100%;
   margin: auto;
   overflow: hidden;
@@ -24,7 +24,7 @@
 }
 
 .title {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: bolder;
   line-height: 26px;
 }
@@ -59,12 +59,13 @@
 }
 
 .container1 img {
-  height: 50%;
-  width: 60%;
+  height: 100px;
+  width: 220px;
 }
 
 .container1 h2 {
   font-size: 20px;
+  margin: 14px 0;
 }
 
 .containerButtonsAbout {
@@ -82,17 +83,26 @@
   }
 
   .title {
-    font-size: 26px;
+    font-size: 44px;
   }
 
   .container1 h2 {
     font-size: 22px;
   }
+
+  .container1 img {
+    height: 180px;
+    width: 260px;
+  }
 }
 
 @media screen and (min-width:768px) {
   .title {
-    font-size: 40px;
+    font-size: 50px;
+  }
+
+  .containerAbout {
+    width: 90%;
   }
 
   .contentAbout1,
@@ -105,11 +115,13 @@
   .container2 {
     height: 80%;
     width: 50%;
+    padding-left: 10%;
   }
 
   .container1 img {
-    height: 70%;
-    width: 80%;
+    height: 260px;
+    width: 340px;
+    margin-bottom: 20px;
   }
 
   .container1 h2 {
@@ -117,11 +129,23 @@
   }
 
   .container2 p {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 410px;
   }
 
   .containerButtonsAbout {
     width: 80%;
+  }
+}
+
+@media screen and (min-width:1080px) {
+  .containerAbout {
+    width: 74%;
+  }
+
+  .container2 p {
+    font-size: 22px;
+    line-height: 32px;
   }
 }

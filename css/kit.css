@@ -1,10 +1,14 @@
 #kit {
   padding: 0;
-  height: 650px;
+  height: 900px;
   width: 100%;
   margin: auto;
   overflow: hidden;
-  background: #ec6a6a;
+  background: #f7f0f5;
+  background: linear-gradient(to bottom, #f7f0f5cc, #ffe66b88), url(../img/comingsoon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,19 +17,17 @@
 
 #kit h1 {
   font-size: 40px;
-  border: 3px solid black;
   height: 12%;
   width: 60%;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   line-height: 40px;
 }
 
 #kit p {
-  border: 3px dashed skyblue;
   height: 40%;
   width: 80%;
   margin-bottom: 20px;
@@ -39,19 +41,31 @@
 
 @media screen and (min-width:480px) {
   #kit p {
-    width: 70%;
-    font-size: 18px;
+    width: 80%;
+    font-size: 22px;
   }
 }
 
 @media screen and (min-width:768px) {
+  #kit {
+    justify-content: space-evenly;
+    padding-top: 60px;
+  }
+
   #kit h1 {
     font-size: 60px;
+    font-weight: bolder;
   }
 
   #kit p {
+    width: 66%;
+    font-size: 26px;
+    line-height: 46px;
+  }
+}
+
+@media screen and (min-width:1080px) {
+  #kit p {
     width: 50%;
-    font-size: 22px;
-    line-height: 36px;
   }
 }

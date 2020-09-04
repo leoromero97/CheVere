@@ -4,7 +4,7 @@
   width: 100%;
   margin: auto;
   overflow: hidden;
-  background: linear-gradient(to bottom, #2c2c2cd7, hsla(0, 0%, 3%, 0.274)), url(../img/menu.png);
+  background: linear-gradient(to bottom, #040404b4, #0404049c), url(../img/menu.png);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,45 +12,205 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
 }
 
 .cardMenu {
-  border: 3px solid white;
-  background-color: rgba(255, 255, 255, 0.63);
-  box-shadow: 0 0 10px black;
+  border: 3px solid #040404;
+  box-shadow: 0 0 8px #040404;
+  background-color: #f7f0f5;
   width: 90%;
   height: 80%;
   padding: 10px;
-}
-
-.deco {
   background-image: url(../img/menuDeco.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-  height: 100%;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.close {
-  font-size: 22px;
+.containerTitleMenu {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-  float: right;
-  width: 30px;
-  height: 30px;
-  background: red;
-  color: white;
-  cursor: pointer;
-  border-radius: 10%;
   text-align: center;
-  -webkit-border-radius: 10%;
-  -moz-border-radius: 10%;
-  -ms-border-radius: 10%;
-  -o-border-radius: 10%;
+  width: 100%;
+  margin-bottom: 40px;
 }
 
+.deco {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.containerPlates {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0% 6%;
+}
+
+/* Tamaño del scroll */
+.containerPlates::-webkit-scrollbar {
+  width: 8px; 
+}
+
+ /* Estilos barra (thumb) de scroll */
+.containerPlates::-webkit-scrollbar-thumb {
+  background: #040404;
+  border-radius: 4px;
+}
+
+.containerPlates::-webkit-scrollbar-thumb:active {
+  background-color: #ffe66bcc;
+}
+
+.containerPlates::-webkit-scrollbar-thumb:hover {
+  background: #d91023;
+  box-shadow: 0 0 2px 1px #0404049c;
+}
+
+ /* Estilos track de scroll */
+.containerPlates::-webkit-scrollbar-track {
+  background: #f7f0f5;
+  border-radius: 4px;
+}
+
+.containerPlates::-webkit-scrollbar-track:hover, 
+.containerPlates::-webkit-scrollbar-track:active {
+  background: #f7f0f5;
+}
+/*aca termina los estilos para el scroll*/
+
+.titleSection h2 {
+  text-align: center;
+  font-size: 22px;
+  margin: 6px 0 20px;
+  border-bottom: 2px solid #040404;
+}
+
+.plate {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 180px;
+}
+
+.plate h3 {
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 4px;
+  line-height: 26px;
+}
+
+.plate p {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.plateBuy {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px;
+}
+
+.plateBuy p {
+  font-size: 16px;
+  font-weight: bolder;
+  margin-right: 20px;
+}
+
+.plateBuy a {
+  margin-right: 20px;
+  padding: 4px;
+  width: 80px;
+  font-size: 16px;
+  text-align: center;
+  background: #ffe66bcc;
+  border: 2px solid #040404;
+}
+
+@media screen and (min-width:480px) {
+  .containerPlates {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  #menu {
+    height: 800px;
+  }
+
+  .cardMenu {
+    padding-top: 40px;
+  }
+
+  .titleSection h2 {
+    font-size: 28px;
+  }
+
+  .containerPlates {
+    padding: 0% 4%;
+    width: 80%;
+    overflow-y: scroll;
+  }
+
+  .plate {
+    height: 170px;
+    margin-bottom: 80px;
+  }
+
+  .plate h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .plate p {
+    font-size: 16px;
+  }
+
+  .plateBuy p,
+  .plateBuy a {
+    font-size: 22px;
+  }
+
+  .plateBuy a {
+    padding: 8px;
+    width: 120px;
+  }
+
+  .plateBuy a:hover {
+    background: #ffe66b;
+    box-shadow: 0 0 6px #ffe66bcc;
+    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+  }
+
+  .cardMenu {
+    height: 84%;
+    width: 60%;
+  }
+
+  .deco {
+    height: 100%;
+  }
+}

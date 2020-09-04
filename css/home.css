@@ -64,23 +64,25 @@
 }
 
 .flag {
-  width: 40px;
-  height: 40px;
-  margin: 0 10px;
+  width: 38px;
+  height: 38px;
+  margin: 0 8px;
 }
 
+
+
 .slide h1 {
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 16px;
   font-weight: bolder;
   color: #f7f0f5;
   width: 80%;
-  line-height: 38px;
+  line-height: 50px;
 }
 
 .slide p {
-  font-size: 20px;
-  line-height: 22px;
+  font-size: 18px;
+  line-height: 28px;
   color: #f7f0f5;
   display: flex;
   align-items: center;
@@ -95,37 +97,33 @@
   width: 120px;
   font-size: 16px;
   text-align: center;
-  color: #f7f0f5;
   border: 2px solid #f7f0f5;
 }
 
 .buttonMenu {
-  background: hsla(354, 86%, 46%, 0.80);
+  background: #da1025cc;
   border: 2px solid #040404;
-  color: #040404;
 }
 
 .buttonOrder {
-  background: hsla(209, 88%, 68%, 0.80);
-  color: #040404;
+  background: #66b0f5cc;
   border: 2px solid #040404;
 }
 
 .buttonReservation {
-  background: hsla(0, 0%, 2%, 0.70);
+  background: #050505b3;
+  color: #f7f0f5;
 }
 
 
 @media screen and (min-width:480px) {
   .slide h1 {
-    font-size: 38px;
-    line-height: 40px;
+    font-size: 42px;
   }
 
   .slide p {
-    font-size: 18px;
+    font-size: 20px;
   }
-
 
   .flag {
     width: 60px;
@@ -147,12 +145,14 @@
   }
 
   .slide h1 {
-    font-size: 60px;
+    font-size: 54px;
+    line-height: 68px;
   }
 
   .slide p {
-    font-size: 38px;
-    line-height: 36px;
+    font-size: 36px;
+    line-height: 48px;
+    width: 60%;
   }
 
   .flag {
@@ -170,7 +170,9 @@
 
   .buttonMenu:hover {
     color: #f7f0f5;
+    border-color: #f7f0f5;
     background: #d91023;
+    box-shadow: 0 0 6px #da1025cc;
     transform: translateY(-4px);
     -webkit-transform: translateY(-4px);
     -moz-transform: translateY(-4px);
@@ -180,6 +182,7 @@
 
   .buttonOrder:hover {
     background: #68b1f5;
+    box-shadow: 0 0 6px #66b0f5cc;
     transform: translateY(-4px);
     -webkit-transform: translateY(-4px);
     -moz-transform: translateY(-4px);
@@ -189,6 +192,7 @@
 
   .buttonReservation:hover {
     background: #040404;
+    box-shadow: 0 0 6px #050505b3;
     transform: translateY(-4px);
     -webkit-transform: translateY(-4px);
     -moz-transform: translateY(-4px);
