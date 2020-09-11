@@ -52,22 +52,20 @@
 }
 
 .containerPlates {
-  height: 100%;
-  width: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
   padding: 0% 6%;
 }
 
+
 /* Tamaño del scroll */
 .containerPlates::-webkit-scrollbar {
-  width: 8px; 
+  width: 8px;
 }
 
- /* Estilos barra (thumb) de scroll */
+/* Estilos barra (thumb) de scroll */
 .containerPlates::-webkit-scrollbar-thumb {
   background: #040404;
   border-radius: 4px;
@@ -78,20 +76,21 @@
 }
 
 .containerPlates::-webkit-scrollbar-thumb:hover {
-  background: #d91023;
+  background: #ffe66bcc;
   box-shadow: 0 0 2px 1px #0404049c;
 }
 
- /* Estilos track de scroll */
+/* Estilos track de scroll */
 .containerPlates::-webkit-scrollbar-track {
   background: #f7f0f5;
   border-radius: 4px;
 }
 
-.containerPlates::-webkit-scrollbar-track:hover, 
+.containerPlates::-webkit-scrollbar-track:hover,
 .containerPlates::-webkit-scrollbar-track:active {
   background: #f7f0f5;
 }
+
 /*aca termina los estilos para el scroll*/
 
 .titleSection h2 {
@@ -101,13 +100,34 @@
   border-bottom: 2px solid #040404;
 }
 
+.food {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+}
+
+.food:hover {
+  transform: scale(4);
+  -webkit-transform: scale(4);
+  -moz-transform: scale(4);
+  -ms-transform: scale(4);
+  -o-transform: scale(4);
+  box-shadow: 0 0 10px #0404049c;
+}
+
 .plate {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   width: 100%;
-  height: 180px;
+  height: auto;
+  flex-shrink: 0;
 }
 
 .plate h3 {
@@ -133,11 +153,11 @@
 .plateBuy p {
   font-size: 16px;
   font-weight: bolder;
-  margin-right: 20px;
+  margin-right: 28px;
 }
 
 .plateBuy a {
-  margin-right: 20px;
+  margin-right: 28px;
   padding: 4px;
   width: 80px;
   font-size: 16px;
@@ -173,7 +193,7 @@
 
   .plate {
     height: 170px;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
   }
 
   .plate h3 {
@@ -212,5 +232,10 @@
 
   .deco {
     height: 100%;
+  }
+
+  .food {
+    height: 90px;
+    width: 90px;
   }
 }

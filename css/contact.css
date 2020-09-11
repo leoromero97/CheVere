@@ -4,7 +4,7 @@
   width: 100%;
   margin: auto;
   overflow: hidden;
-  background: linear-gradient(to top, #ffe66b, #ffe66bcc), url(../img/footer.jpg);
+  background: linear-gradient(to top, #ffe66bd2, #ffe66bb0), url(../img/footer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;

@@ -26,7 +26,7 @@
 .title {
   font-size: 40px;
   font-weight: bolder;
-  line-height: 26px;
+  line-height: 38px;
 }
 
 .containerAbout {
@@ -59,7 +59,7 @@
 }
 
 .container1 img {
-  height: 100px;
+  height: 120px;
   width: 220px;
 }
 
@@ -97,6 +97,9 @@
 }
 
 @media screen and (min-width:768px) {
+  #about {
+    height: 1400px;
+  }
   .title {
     font-size: 50px;
   }
@@ -129,7 +132,7 @@
   }
 
   .container2 p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     max-width: 410px;
   }
@@ -145,7 +148,7 @@
   }
 
   .container2 p {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 32px;
   }
 }

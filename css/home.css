@@ -45,7 +45,7 @@
 }
 
 .slide:nth-child(2) {
-  background: linear-gradient(to bottom, #040404b4, #0404049c), url(../img/plato2.png);
+  background: linear-gradient(to bottom, #040404b4, #0404049c), url(../img/plato2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -141,7 +141,7 @@
 
 @media screen and (min-width:768px) {
   #home {
-    height: 850px;
+    height: 900px;
   }
 
   .slide h1 {
