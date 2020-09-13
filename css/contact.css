@@ -159,6 +159,50 @@
   .external img:hover {
     height: 32px;
     width: 32px;
+    padding: 2px;
+    border: 1px solid #f7f0f5;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #f7f0f5;
+
+  }
+
+  .external .facebook:hover {
+    background-color: #1D3C78;
+    border-color: #1D3C78;
+  }
+
+  .external .instagram:hover {
+    background: #12c2e9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #E1306C, #833AB4, #3f729b);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #E1306C, #833AB4, #3f729b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-color: #E1306C;
+  }
+
+  .external .youtube:hover {
+    border-color: #c4302b;
+    background-color: #c4302b;
+  }
+
+  .external .whatsapp:hover {
+    border-color: #00bb2d;
+    background-color: #00bb2d;
+  }
+
+  .external .hours:hover {
+    border-color: #ffe66b;
+    background-color: #ffe66b;
+  }
+
+  .external .ubication:hover {
+    border-color: #d91023;
+    background-color: #d91023;
   }
 
   .firma {
